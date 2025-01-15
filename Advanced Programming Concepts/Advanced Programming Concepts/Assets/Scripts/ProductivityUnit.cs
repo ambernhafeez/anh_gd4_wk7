@@ -30,7 +30,7 @@ public class ProductivityUnit: Unit
     {
         if(currentPile != null)
         {
-            currentPile.ProductionSpeed /= productivityMultiplier;
+            currentPile.ProductionSpeed *= productivityMultiplier;
             currentPile = null;
         }
     }

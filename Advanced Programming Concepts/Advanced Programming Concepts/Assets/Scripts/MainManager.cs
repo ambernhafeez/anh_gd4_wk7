@@ -6,7 +6,7 @@ public class MainManager : MonoBehaviour
 {
     // making this script into a singleton pattern class
     // instance is the name we are giving the game object the script is attached to now
-    public static MainManager Instance;
+    public static MainManager Instance {get; private set; }
     public float timeElapsed;
     public Color unitColour;
 
